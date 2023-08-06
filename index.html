@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Airbnb</title>
+    <style>
+      nav {
+        text-align: center;
+        display: block;
+        font-size: 30px;
+        color: deeppink;
+      }
+
+      a {
+        margin-right: 5px;
+        margin-left: 5px;
+
+        text-decoration: none;
+        color: inherit;
+        font-size: 20px;
+      }
+
+      .div_container {
+        cursor: pointer;
+        display: flex;
+        justify-content: center;
+        padding: 10px;
+        border: 1px solid deeppink;
+        width: fit-content;
+        margin-top: 30px;
+        margin-left: auto;
+        margin-right: auto;
+      }
+
+      img {
+        margin-top: 10px;
+        height: 50px;
+        width: 50px;
+      }
+      .footerholder {
+        background: none repeat scroll 0 0 transparent;
+        bottom: 0;
+        position: fixed;
+        text-align: center;
+        width: 100%;
+      }
+      footer {
+        background: none repeat scroll 0 0 deeppink;
+        color: white;
+        padding-top: 2px;
+        height: 65px;
+        margin: auto;
+        width: 400px;
+        border-radius: 10px;
+      }
+    </style>
+  </head>
+
+  <body style="overflow: scroll;">
+    <header>
+      <nav>
+        <h1>Airbnb</h1>
+        <a href="index.html">Anasayfa</a> | <a href="homes.html">Evler</a> |
+        <a href="about.html">Hakkımızda</a>
+      </nav>
+    </header>
+    <div style="margin-bottom: 70px">
+      <div class="div_container" onclick="location.href='#';">
+        <img src="images/pool.png" alt="" />
+        <p>Muhteşem Havuzlar</p>
+      </div>
+      <div class="div_container">
+        <img src="images/sea.png" alt="" />
+        <p>Deniz Kıyısı</p>
+      </div>
+      <div class="div_container">
+        <img src="images/pisa.png" alt="" />
+        <p>Simgesel Kentler</p>
+      </div>
+      <div class="div_container">
+        <img src="images/camp.png" alt="" />
+        <p>Kamp Alanları</p>
+      </div>
+      <div class="div_container">
+        <img src="images/mountain.png" alt="" />
+        <p>Dünyanın Zirveleri</p>
+      </div>
+    </div>
+    <div class="footerholder">
+      <footer>
+        <p>
+          @ 2023 Airbnb,lnc.<br />
+          <a href="about.html">Hakkımızda</a>
+        </p>
+      </footer>
+    </div>
+  </body>
+</html>
